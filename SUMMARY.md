@@ -5,6 +5,7 @@
     * [什么是AI?](CommonSense/1.md)
     * [ML的分类](CommonSense/2.md)
     * [例子：线性回归](CommonSense/3.md)
+* [调试策略](Strategy.md)
 * [第1章 绪论](Chapter1/1.md)
 * 第2章 模型评估与选择
     * [2.2 评估方法](Chapter2/2Evaluation.md)
