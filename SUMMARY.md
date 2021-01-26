@@ -7,7 +7,9 @@
     * [例子：线性回归](CommonSense/3.md)
     * [模型选择](CommonSense/4.md)
     * [梯度下降法](CommonSense/5.md)
-    * [调试策略](Strategy.md)  
+    * [调试策略](Strategy.md)
+* 监督模型
+    * [概率生成模型](Supervise/Generative.md)
 * [第1章 绪论](Chapter1/1.md)
 * 第2章 模型评估与选择
     * [2.2 评估方法](Chapter2/2Evaluation.md)
