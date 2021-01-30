@@ -10,6 +10,7 @@
     * [调试策略](Strategy.md)
 * 监督模型
     * [概率生成模型](Supervise/Generative.md)
+* [半监督模型](SemiSupervise.md)
 * [第1章 绪论](Chapter1/1.md)
 * 第2章 模型评估与选择
     * [2.2 评估方法](Chapter2/2Evaluation.md)
