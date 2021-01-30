@@ -1,0 +1,580 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>模型选择 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="windmissing">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex-plus/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-click-reveal/click_reveal.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="5.html" />
+    
+    
+    <link rel="prev" href="3.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"windmissing/Water-MachineLearning","types":["star","watch","fork"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    机器学习介绍
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    什么是AI?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    ML的分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    例子：线性回归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    模型选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    梯度下降法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Strategy.html">
+            
+                <a href="../Strategy.html">
+            
+                    
+                    调试策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    监督模型
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Supervise/Generative.html">
+            
+                <a href="../Supervise/Generative.html">
+            
+                    
+                    概率生成模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../SemiSupervise.html">
+            
+                <a href="../SemiSupervise.html">
+            
+                    
+                    半监督模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chapter1/1.html">
+            
+                <a href="../Chapter1/1.html">
+            
+                    
+                    第1章 绪论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    第2章 模型评估与选择
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Chapter2/2Evaluation.html">
+            
+                <a href="../Chapter2/2Evaluation.html">
+            
+                    
+                    2.2 评估方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Chapter2/3Performance.html">
+            
+                <a href="../Chapter2/3Performance.html">
+            
+                    
+                    2.3 性能度量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Chapter2/4Compare.html">
+            
+                <a href="../Chapter2/4Compare.html">
+            
+                    
+                    2.4 比较检验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Chapter12/Theory.html">
+            
+                <a href="../Chapter12/Theory.html">
+            
+                    
+                    第12章 计算学习理论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Chapter13/SemiSupervised.html">
+            
+                <a href="../Chapter13/SemiSupervised.html">
+            
+                    
+                    第13章 半监督学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >模型选择</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x95EE;&#xFF1A;&#x7EBF;&#x6027;&#x56DE;&#x5F52;&#x6216;&#x8005;&#x4E0D;&#x540C;&#x9636;&#x6570;&#x7684;&#x591A;&#x9879;&#x5F0F;&#x56DE;&#x5F52;&#xFF0C;&#x6BCF;&#x4E2A;&#x6A21;&#x578B;&#x5047;&#x8BBE;&#x7A7A;&#x95F4;&#x4E2D;&#x90FD;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x6700;&#x597D;&#x7684;<code>f*</code>&#xFF0C;&#x54EA;&#x4E2A;<code>f*</code>&#x624D;&#x662F;&#x6700;&#x597D;&#x7684;&#xFF1F;<br>&#x7B54;&#xFF1A;<br>&#xFF08;1&#xFF09;&#x7406;&#x8BBA;&#x4E0A;<br>&#x4ECE;&#x6570;&#x5B66;&#x516C;&#x5F0F;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x7EBF;&#x6027;&#x56DE;&#x5F52;&#x6216;&#x8005;&#x4E0D;&#x540C;&#x9636;&#x6570;&#x7684;&#x591A;&#x9879;&#x5F0F;&#x56DE;&#x5F52;&#x7684;&#x5047;&#x8BBE;&#x7A7A;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x4E3A;&#xFF1A;<br>&#x9AD8;&#x9636;&#x591A;&#x9879;&#x5F0F;&#x56DE;&#x5F52;&#x6A21;&#x578B;&#x7684;&#x5047;&#x8BBE;&#x7A7A;&#x95F4; <strong>&#x5305;&#x542B;</strong> &#x4F4E;&#x9636;&#x591A;&#x9879;&#x5F0F;&#x56DE;&#x5F52;&#x6A21;&#x578B;&#x7684;&#x5047;&#x8BBE;&#x7A7A;&#x95F4;<br>&#x4F4E;&#x9636;&#x591A;&#x9879;&#x5F0F;&#x56DE;&#x5F52;&#x6A21;&#x578B;&#x7684;&#x5047;&#x8BBE;&#x7A7A;&#x95F4; <strong>&#x5305;&#x542B;</strong> &#x7EBF;&#x6027;&#x56DE;&#x5F52;&#x6A21;&#x578B;&#x7684;&#x5047;&#x8BBE;&#x7A7A;&#x95F4;<br>&#x6240;&#x4EE5;&#x9636;&#x6570;&#x8D8A;&#x9AD8;&#xFF08;&#x8D8A;&#x590D;&#x6742;&#xFF09;&#x7684;&#x5047;&#x8BBE;&#x7A7A;&#x95F4;&#xFF0C;&#x8D8A;&#x6709;&#x53EF;&#x80FD;&#x5F97;&#x5230;&#x6700;&#x597D;&#x7684;f<em><br>&#x800C;&#x4E14;&#x6570;&#x636E;&#x4E0A;&#x770B;&#xFF0C;&#x590D;&#x6742;&#x6A21;&#x578B;&#x7684;`f</em><code>&#x5728;&#x8BAD;&#x7EC3;&#x96C6;&#x4E0A;&#x7684;error&#x786E;&#x5B9E;&#x66F4;&#x4F4E;&#x3002;  
+&#xFF08;2&#xFF09;&#x5B9E;&#x9645;&#x4E0A;  
+&#x5728;&#x67D0;&#x4E2A;&#x5047;&#x8BBE;&#x7A7A;&#x95F4;&#x4E2D;&#x9009;&#x62E9;</code>f<em><code>&#x662F;&#x57FA;&#x4E8E;&#x8BAD;&#x7EC3;&#x96C6;&#x4E0A;&#x7684;error  
+&#x4F46;&#x5728;&#x591A;&#x4E2A;&#x5047;&#x8BBE;&#x7A7A;&#x95F4;&#x7684;</code>f</em><code>&#x4E2D;&#x9009;&#x62E9;&#x6700;&#x597D;&#x7684;</code>f<em>`&#xFF0C;&#x57FA;&#x4E8E;&#x7684;&#x662F;&#x6D4B;&#x8BD5;&#x96C6;&#x4E0A;&#x7684;error&#x3002;<br>&#x4E8E;&#x662F;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;&#x7406;&#x8BBA;&#x4E0D;&#x6210;&#x7ACB;&#xFF0C;&#x5E76;&#x975E;&#x6A21;&#x578B;&#x7684;&#x5047;&#x8BBE;&#x7A7A;&#x95F4;&#x8D8A;&#x590D;&#x6742;&#xFF0C;&#x5B83;&#x7684;f</em>&#x5C31;&#x4E00;&#x5B9A;&#x8D8A;&#x597D;&#x3002;<br>&#x8FC7;&#x4E8E;&#x590D;&#x6742;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x8BAD;&#x7EC3;&#x96C6;&#x4E0A;error&#x5F88;&#x4F4E;&#xFF0C;&#x4F46;&#x6D4B;&#x8BD5;&#x96C6;&#x4E0A;&#x7684;error&#x6781;&#x9AD8;&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x79F0;&#x4E3A;&#x8FC7;&#x62DF;&#x5408;&#x3002;  </p>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x8BAD;&#x7EC3;&#x6570;&#x636E;&#x4E0A;score&#x6700;&#x5C0F;&#x7684;f&#x5728;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x4E0A;score&#x5E76;&#x4E0D;&#x5C0F;&#xFF1F;&#x600E;&#x4E48;&#x89E3;&#x51B3;&#xFF1F;</p>
+<p>&#x6D4B;&#x8BD5;&#x96C6;&#x4E0A;&#x7684;&#x8BEF;&#x5DEE;&#x6765;&#x81EA;&#x54EA;&#x91CC;&#xFF1F;&#x4E3A;&#x4EC0;&#x4E48;&#x5206;&#x6790;&#x6D4B;&#x8BD5;&#x96C6;&#x4E0A;&#x7684;&#x8BEF;&#x5DEE;&#xFF1F;  </p>
+<p>&#x6A21;&#x578B;&#x8BAD;&#x7EC3;&#x51FA;&#x6765;&#x7684;f&#x672C;&#x8D28;&#x4E0A;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x4E0E;&#x771F;&#x5B9E;&#x7684;&#x6620;&#x5C04;&#x662F;&#x4EC0;&#x4E48;&#x5173;&#x7CFB;&#xFF1F;<br>f*&#x662F;&#x771F;&#x5B9E;f&#x7684;&#x4E00;&#x4E2A;&#x4F30;&#x8BA1;&#x503C;&#x3002;  </p>
+<p>&#x4EC0;&#x4E48;&#x662F;&#x504F;&#x5DEE;&#x548C;&#x65B9;&#x5DEE;&#xFF1F;  </p>
+<p>&#x5177;&#x6709;&#x9AD8;&#x504F;&#x5DEE;&#x6216;&#x8005;&#x9AD8;&#x65B9;&#x5DEE;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5177;&#x4F53;&#x8868;&#x73B0;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;  </p>
+<p>&#x600E;&#x4E48;&#x5224;&#x65AD;&#x4E00;&#x4E2A;f&#x7684;&#x8BEF;&#x5DEE;&#x6765;&#x81EA;&#x54EA;&#x91CC;&#xFF1F;  </p>
+<p>&#x600E;&#x4E48;&#x89E3;&#x51B3;f&#x4E0A;&#x7684;&#x8BEF;&#x5DEE;&#xFF1F;  </p>
+<p>&#x603B;&#x7ED3;&#xFF1A;&#x8BAD;&#x7EC3;&#x96C6;&#x4E0A;&#x7684;&#x597D;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x771F;&#x7684;&#x597D;</p>
+<div id="gitalk-container"></div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3.html" class="navigation navigation-prev " aria-label="Previous page: 例子：线性回归">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="5.html" class="navigation navigation-next " aria-label="Next page: 梯度下降法">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"模型选择","level":"1.2.4","depth":2,"next":{"title":"梯度下降法","level":"1.2.5","depth":2,"path":"CommonSense/5.md","ref":"CommonSense/5.md","articles":[]},"previous":{"title":"例子：线性回归","level":"1.2.3","depth":2,"path":"CommonSense/3.md","ref":"CommonSense/3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","katex-plus","alerts","mygitalk","github","github-buttons","splitter","-sharing","sharing-plus","donate","copy-code-button","anchor-navigation-ex","sectionx","click-reveal"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/windmissing/Water-MachineLearning"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"http://windmissing.github.io/images/2020/alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"http://windmissing.github.io/images/2020/weixin.jpg","wechatText":"微信打赏"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"click-reveal":{},"sectionx":{},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"isShowTocTitleIcon":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"katex-plus":{},"alerts":{},"github-buttons":{"repo":"windmissing/Water-MachineLearning","types":["star","watch","fork"],"size":"small"},"copy-code-button":{},"mygitalk":{"flipMoveOptions":{},"clientID":"b622481cb88eba2f32db","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["windmissing"],"createIssueManually":false,"distractionFreeMode":false,"repo":"Water-MachineLearning","owner":"windmissing","enableHotKey":true,"clientSecret":"1d8550b28cfbf3afb71fff648b67cf6fe708b90c","pagerDirection":"last","labels":["Gitalk"]},"sharing":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"windmissing","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"3.2.3"},"file":{"path":"CommonSense/4.md","mtime":"2021-01-30T08:48:22.621Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-30T08:49:48.697Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+        
+    
+        
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-click-reveal/click_reveal.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

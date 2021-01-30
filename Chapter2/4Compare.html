@@ -1,0 +1,587 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2.4 比较检验 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="windmissing">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex-plus/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-click-reveal/click_reveal.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Chapter12/Theory.html" />
+    
+    
+    <link rel="prev" href="3Performance.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"windmissing/Water-MachineLearning","types":["star","watch","fork"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    机器学习介绍
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../CommonSense/1.html">
+            
+                <a href="../CommonSense/1.html">
+            
+                    
+                    什么是AI?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../CommonSense/2.html">
+            
+                <a href="../CommonSense/2.html">
+            
+                    
+                    ML的分类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../CommonSense/3.html">
+            
+                <a href="../CommonSense/3.html">
+            
+                    
+                    例子：线性回归
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../CommonSense/4.html">
+            
+                <a href="../CommonSense/4.html">
+            
+                    
+                    模型选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../CommonSense/5.html">
+            
+                <a href="../CommonSense/5.html">
+            
+                    
+                    梯度下降法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../Strategy.html">
+            
+                <a href="../Strategy.html">
+            
+                    
+                    调试策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    监督模型
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Supervise/Generative.html">
+            
+                <a href="../Supervise/Generative.html">
+            
+                    
+                    概率生成模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../SemiSupervise.html">
+            
+                <a href="../SemiSupervise.html">
+            
+                    
+                    半监督模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chapter1/1.html">
+            
+                <a href="../Chapter1/1.html">
+            
+                    
+                    第1章 绪论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    第2章 模型评估与选择
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="2Evaluation.html">
+            
+                <a href="2Evaluation.html">
+            
+                    
+                    2.2 评估方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="3Performance.html">
+            
+                <a href="3Performance.html">
+            
+                    
+                    2.3 性能度量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.3" data-path="4Compare.html">
+            
+                <a href="4Compare.html">
+            
+                    
+                    2.4 比较检验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Chapter12/Theory.html">
+            
+                <a href="../Chapter12/Theory.html">
+            
+                    
+                    第12章 计算学习理论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../Chapter13/SemiSupervised.html">
+            
+                <a href="../Chapter13/SemiSupervised.html">
+            
+                    
+                    第13章 半监督学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2.4 比较检验</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#241-&#x5047;&#x8BBE;&#x68C0;&#x9A8C;"><b>1. </b>2.4.1 &#x5047;&#x8BBE;&#x68C0;&#x9A8C;</a></li><li><span class="title-icon "></span><a href="#242-&#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;t&#x68C0;&#x9A8C;"><b>2. </b>2.4.2 &#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;t&#x68C0;&#x9A8C;</a></li><li><span class="title-icon "></span><a href="#243-mcnemar&#x68C0;&#x9A8C;"><b>3. </b>2.4.3 McNemar&#x68C0;&#x9A8C;</a></li><li><span class="title-icon "></span><a href="#244-friedman&#x68C0;&#x9A8C;&#x4E0E;nememyi&#x540E;&#x7EED;&#x68C0;&#x9A8C;"><b>4. </b>2.4.4 Friedman&#x68C0;&#x9A8C;&#x4E0E;Nememyi&#x540E;&#x7EED;&#x68C0;&#x9A8C;</a></li></ul></div><a href="#241-&#x5047;&#x8BBE;&#x68C0;&#x9A8C;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p>&quot;&#x5BF9;&#x673A;&#x5668;&#x5B66;&#x4E60;&#x7684;&#x6027;&#x80FD;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&quot;&#x65F6;&#x5B58;&#x5728;&#x7684;&#x95EE;&#x9898;&#xFF1A;  </p>
+<ol>
+<li>&#x5E0C;&#x671B;&#x8BC4;&#x4F30;&#x7684;&#x662F;&#x6CDB;&#x5316;&#x6027;&#x80FD;&#xFF0C;&#x5B9E;&#x9645;&#x8BC4;&#x4F30;&#x7684;&#x662F;&#x6D4B;&#x8BD5;&#x96C6;&#x6027;&#x80FD;  </li>
+<li>&#x6D4B;&#x8BD5;&#x96C6;&#x6027;&#x80FD;&#x4E0E;&#x6D4B;&#x8BD5;&#x96C6;&#x7684;&#x9009;&#x62E9;&#x6709;&#x5173;  </li>
+<li>&#x7B97;&#x6CD5;&#x672C;&#x8EAB;&#x5177;&#x6709;&#x968F;&#x673A;&#x6027;<br>&#x7EDF;&#x8BA1;&#x5047;&#x8BBE;&#x68C0;&#x9A8C;&#xFF08;hypothesis test&#xFF09;:  </li>
+<li>&#x5982;&#x679C;&#xFF1A;&#x6D4B;&#x8BD5;&#x96C6;&#x4E0A;A&#x6BD4;B&#x597D;  </li>
+<li>&#x90A3;&#x4E48;&#xFF1A;A&#x7684;&#x6CDB;&#x5316;&#x6027;&#x80FD;&#x662F;&#x5426;&#x4F18;&#x4E8E;B&#xFF1F;&#x4F18;&#x4E8E;B&#x7684;&#x53EF;&#x80FD;&#x6027;&#x6709;&#x591A;&#x5927;&#xFF1F;  </li>
+</ol>
+<h1 id="241-&#x5047;&#x8BBE;&#x68C0;&#x9A8C;"><a name="241-&#x5047;&#x8BBE;&#x68C0;&#x9A8C;" class="anchor-navigation-ex-anchor" href="#241-&#x5047;&#x8BBE;&#x68C0;&#x9A8C;"><i class="fa fa-link" aria-hidden="true"></i></a>1. 2.4.1 &#x5047;&#x8BBE;&#x68C0;&#x9A8C;</h1>
+<p><a href="https://www.zhihu.com/question/64441961" target="_blank">&#x663E;&#x8457;&#x5EA6;&#x3001;&#x7F6E;&#x4FE1;&#x5EA6;&#x3001;&#x81EA;&#x7531;&#x5EA6;</a>  </p>
+<h1 id="242-&#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;t&#x68C0;&#x9A8C;"><a name="242-&#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;t&#x68C0;&#x9A8C;" class="anchor-navigation-ex-anchor" href="#242-&#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;t&#x68C0;&#x9A8C;"><i class="fa fa-link" aria-hidden="true"></i></a>2. 2.4.2 &#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;t&#x68C0;&#x9A8C;</h1>
+<p>&#x6A21;&#x578B;A&#xFF1A;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mi>&#x3F5;</mi><mn>1</mn><mi>A</mi></msubsup><mo separator="true">,</mo><msubsup><mi>&#x3F5;</mi><mn>2</mn><mi>A</mi></msubsup><mo separator="true">,</mo><mo>&#x22EF;</mo><mspace width="0.16667em"></mspace><mo separator="true">,</mo><msubsup><mi>&#x3F5;</mi><mi>k</mi><mi>A</mi></msubsup></mrow><annotation encoding="application/x-tex">\epsilon_1^A, \epsilon_2^A, \cdots, \epsilon_k^A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8413309999999999em;"></span><span class="strut bottom" style="height:1.1244389999999997em;vertical-align:-0.2831079999999999em;"></span><span class="base"><span class="mord"><span class="mord mathit">&#x3F5;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-2.4518920000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">A</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.24810799999999997em;"></span></span></span></span></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">&#x3F5;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-2.4518920000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">A</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.24810799999999997em;"></span></span></span></span></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="minner">&#x22EF;</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mspace thinspace"></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">&#x3F5;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-2.4168920000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.03148em;">k</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">A</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2831079999999999em;"></span></span></span></span></span></span></span></span><br>&#x6A21;&#x578B;B&#xFF1A;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mi>&#x3F5;</mi><mn>1</mn><mi>B</mi></msubsup><mo separator="true">,</mo><msubsup><mi>&#x3F5;</mi><mn>2</mn><mi>B</mi></msubsup><mo separator="true">,</mo><mo>&#x22EF;</mo><mspace width="0.16667em"></mspace><mo separator="true">,</mo><msubsup><mi>&#x3F5;</mi><mi>k</mi><mi>B</mi></msubsup></mrow><annotation encoding="application/x-tex">\epsilon_1^B, \epsilon_2^B, \cdots, \epsilon_k^B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8413309999999999em;"></span><span class="strut bottom" style="height:1.1244389999999997em;vertical-align:-0.2831079999999999em;"></span><span class="base"><span class="mord"><span class="mord mathit">&#x3F5;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-2.4518920000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.24810799999999997em;"></span></span></span></span></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">&#x3F5;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-2.4518920000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.24810799999999997em;"></span></span></span></span></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="minner">&#x22EF;</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mspace thinspace"></span><span class="mpunct">,</span><span class="mord rule" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathit">&#x3F5;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-2.4168920000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.03148em;">k</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2831079999999999em;"></span></span></span></span></span></span></span></span>  </p>
+<p>&#x5047;&#x8BBE;&#x68C0;&#x9A8C;&#x7684;&#x524D;&#x63D0;&#x662F;&#xFF1A;&#x6D4B;&#x8BD5;&#x9519;&#x8BEF;&#x7387;&#x4E3A;&#x6CDB;&#x5316;&#x9519;&#x8BEF;&#x7387;&#x7684;&#x72EC;&#x7ACB;&#x91C7;&#x6837;<br>&#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;&#x7684;&#x5C40;&#x9650;&#xFF1A;&#x6D4B;&#x8BD5;&#x9519;&#x8BEF;&#x7387;&#x5E76;&#x4E0D;&#x72EC;&#x7ACB;&#xFF0C;&#x5BFC;&#x81F4;&#x8FC7;&#x9AD8;&#x4F30;&#x8BA1;&#x5047;&#x8BBE;&#x6210;&#x7ACB;&#x7684;&#x6982;&#x7387;<br>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;<br>10&#x6298;&#x4EA4;&#x53C9;&#x9A8C;&#x8BC1; --&gt; 5&#x6B21;2&#x6298;&#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;<br><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mi mathvariant="normal">&#x394;</mi><mi>a</mi><mi>b</mi></msubsup></mrow><annotation encoding="application/x-tex">\Delta_a^b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.849108em;"></span><span class="strut bottom" style="height:1.096108em;vertical-align:-0.247em;"></span><span class="base"><span class="mord"><span class="mord">&#x394;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.849108em;"><span style="top:-2.4530000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">a</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathit mtight">b</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"></span></span></span></span></span></span></span></span>&#x4EE3;&#x8868;&#x7B2C;a&#x6B21;&#x7B2C;b&#x6298;&#x4E0A;&#x7684;&#x9519;&#x8BEF;&#x7387;<br>[?] &#x4E3A;&#x4EC0;&#x4E48;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>&#x3BC;</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="base"><span class="mord mathit">&#x3BC;</span></span></span></span>&#x53EA;&#x7528;&#x7B2C;&#x4E00;&#x6B21;&#x7684;&#xFF1F;<br>[?] &#x6700;&#x540E;&#x4E00;&#x53E5;&#x6CA1;&#x770B;&#x61C2;&#x3002;&#x516C;&#x5F0F;2.32&#x6CA1;&#x770B;&#x61C2;  </p>
+<h1 id="243-mcnemar&#x68C0;&#x9A8C;"><a name="243-mcnemar&#x68C0;&#x9A8C;" class="anchor-navigation-ex-anchor" href="#243-mcnemar&#x68C0;&#x9A8C;"><i class="fa fa-link" aria-hidden="true"></i></a>3. 2.4.3 McNemar&#x68C0;&#x9A8C;</h1>
+<p>&#x5217;&#x8054;&#x8868; contingency table<br>[?] &#x8FDE;&#x7EED;&#x6027;&#x6821;&#x6B63;</p>
+<p><a href="https://windmissing.github.io/mathematics_basic_for_ML/Probability/distribution.html" target="_blank">&#x5361;&#x65B9;&#x5206;&#x5E03;</a>  </p>
+<h1 id="244-friedman&#x68C0;&#x9A8C;&#x4E0E;nememyi&#x540E;&#x7EED;&#x68C0;&#x9A8C;"><a name="244-friedman&#x68C0;&#x9A8C;&#x4E0E;nememyi&#x540E;&#x7EED;&#x68C0;&#x9A8C;" class="anchor-navigation-ex-anchor" href="#244-friedman&#x68C0;&#x9A8C;&#x4E0E;nememyi&#x540E;&#x7EED;&#x68C0;&#x9A8C;"><i class="fa fa-link" aria-hidden="true"></i></a>4. 2.4.4 Friedman&#x68C0;&#x9A8C;&#x4E0E;Nememyi&#x540E;&#x7EED;&#x68C0;&#x9A8C;</h1>
+<p>&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF1A;&#x5728;&#x4E00;&#x7EC4;&#x6570;&#x636E;&#x96C6;&#x4E0A;&#x5BF9;&#x591A;&#x4E2A;&#x7B97;&#x6CD5;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;<br>&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x96C6; -&gt; &#x4E00;&#x7EC4;&#x6570;&#x636E;&#x96C6;<br>&#x4E24;&#x4E2A;&#x7B97;&#x6CD5; -&gt; &#x591A;&#x4E2A;&#x7B97;&#x6CD5;  </p>
+<p>&#x540E;&#x9762;&#x6CA1;&#x7EE7;&#x7EED;&#x770B;&#x4E86;</p>
+<div id="gitalk-container"></div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3Performance.html" class="navigation navigation-prev " aria-label="Previous page: 2.3 性能度量">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Chapter12/Theory.html" class="navigation navigation-next " aria-label="Next page: 第12章 计算学习理论">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2.4 比较检验","level":"1.6.3","depth":2,"next":{"title":"第12章 计算学习理论","level":"1.7","depth":1,"path":"Chapter12/Theory.md","ref":"Chapter12/Theory.md","articles":[]},"previous":{"title":"2.3 性能度量","level":"1.6.2","depth":2,"path":"Chapter2/3Performance.md","ref":"Chapter2/3Performance.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","katex-plus","alerts","mygitalk","github","github-buttons","splitter","-sharing","sharing-plus","donate","copy-code-button","anchor-navigation-ex","sectionx","click-reveal"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/windmissing/Water-MachineLearning"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"http://windmissing.github.io/images/2020/alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"http://windmissing.github.io/images/2020/weixin.jpg","wechatText":"微信打赏"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"click-reveal":{},"sectionx":{},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"isShowTocTitleIcon":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"katex-plus":{},"alerts":{},"github-buttons":{"repo":"windmissing/Water-MachineLearning","types":["star","watch","fork"],"size":"small"},"copy-code-button":{},"mygitalk":{"flipMoveOptions":{},"clientID":"b622481cb88eba2f32db","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["windmissing"],"createIssueManually":false,"distractionFreeMode":false,"repo":"Water-MachineLearning","owner":"windmissing","enableHotKey":true,"clientSecret":"1d8550b28cfbf3afb71fff648b67cf6fe708b90c","pagerDirection":"last","labels":["Gitalk"]},"sharing":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"windmissing","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"3.2.3"},"file":{"path":"Chapter2/4Compare.md","mtime":"2021-01-30T08:48:22.621Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-01-30T08:49:48.697Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+        
+    
+        
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-click-reveal/click_reveal.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
